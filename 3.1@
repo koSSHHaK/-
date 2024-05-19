@@ -1,0 +1,19 @@
+var students = ["никита", "илья", "даня", "рома", "ваня", "степа", "дима", "сергей", "миша", "вова", "максим", "влад"]
+
+print("Список учеников:")
+for student in students {
+    print(student)
+}
+
+students.append("маша")
+students.append("катя")
+students.append("соня")
+students.insert("настя", at: 3)
+students.insert("даша", at: 6)
+students.insert("лиза", at: 9)
+students.insert("вика", at: 12)
+
+print("\nОбновленный список учеников:")
+for student in students {
+    print(student)
+}
