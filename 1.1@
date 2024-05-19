@@ -1,0 +1,13 @@
+import Swift
+let intMin = Int.min
+let intMax = Int.max
+let uintMin = UInt.min
+let uintMax = UInt.max
+let floatMin = Float.leastNonzeroMagnitude
+let floatMax = Float.greatestFiniteMagnitude
+let doubleMin = Double.leastNonzeroMagnitude
+let doubleMax = Double.greatestFiniteMagnitude
+print("int: min = \(intMin), max = \(intMax)")
+print("uint: min = \(uintMin), max = \(uintMax)")
+print("float: min = \(floatMin), max = \(floatMax)")
+print("double: min = \(doubleMin), max = \(doubleMax)")
