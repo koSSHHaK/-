@@ -1,0 +1,27 @@
+
+let trafficViolations = (speedingTickets: 15, drivingUnderInfluence: 7, drivingWithoutLicense: 12)
+
+let partnerViolations = (speedingTickets: 20, drivingUnderInfluence: 10, drivingWithoutLicense: 8)
+
+let differenceInViolations = (
+    speedingTickets: partnerViolations.speedingTickets - trafficViolations.speedingTickets,
+    drivingUnderInfluence: partnerViolations.drivingUnderInfluence - trafficViolations.drivingUnderInfluence,
+    drivingWithoutLicense: partnerViolations.drivingWithoutLicense - trafficViolations.drivingWithoutLicense
+)
+
+print("Разница в количестве нарушений:")
+print("- Превышение скорости:", differenceInViolations.0)
+print("- Вождение в нетрезвом виде:", differenceInViolations.1)
+print("- Вождение без прав:", differenceInViolations.2)
+
+
+print("\nРазница в количестве нарушений:")
+print("- Превышение скорости:", differenceInViolations.speedingTickets)
+print("- Вождение в нетрезвом виде:", differenceInViolations.drivingUnderInfluence)
+print("- Вождение без прав:", differenceInViolations.drivingWithoutLicense)
+
+print("\nРазница в количестве нарушений:")
+let (speedingTicketsDiff, drivingUnderInfluenceDiff, drivingWithoutLicenseDiff) = differenceInViolations
+print("- Превышение скорости:", speedingTicketsDiff)
+print("- Вождение в нетрезвом виде:", drivingUnderInfluenceDiff)
+print("- Вождение без прав:", drivingWithoutLicenseDiff)

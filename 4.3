@@ -1,0 +1,13 @@
+// Создаем пустой словарь
+var emptyDict: [String: Int] = [:]
+
+// Проверяем, является ли словарь пустым
+if emptyDict.isEmpty {
+    print("Словарь пустой, добавляем в него пары значений:")
+    
+    // Добавляем пары значений в словарь
+    emptyDict = ["Apple": 1, "Orange": 2, "Banana": 3]
+    print(emptyDict)
+} else {
+    print("Словарь не пустой, содержит \(emptyDict.count) элементов.")
+}

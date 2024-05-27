@@ -1,0 +1,20 @@
+
+var carDict: [String: String] = ["иномарка": "Toyota Camry"]
+
+carDict["отечественная"] = "Lada Vesta"
+
+print("Ключи и значения словаря:")
+for (key, value) in carDict {
+    print("\(key): \(value)")
+}
+
+print("\nЗначения словаря:")
+print(carDict.values)
+
+carDict["иномарка"] = nil
+print("\nСловарь после удаления 'иномарка' через присваивание nil:")
+print(carDict)
+
+carDict.removeValue(forKey: "отечественная")
+print("\nСловарь после удаления 'отечественная' через removeValue():")
+print(carDict)
